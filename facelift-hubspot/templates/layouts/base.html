@@ -9,10 +9,11 @@
     {% if page_meta.html_title || pageTitle %}<title>{{ page_meta.html_title || pageTitle }}</title> {% endif %}
     {% if site_setings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
      <meta name="description" content="{{ page_meta.meta_description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
      {{ require_css(get_asset_url("../../assets/css/vendors.css")) }}
     {{ require_css(get_asset_url("../../assets/css/app.css")) }}
-      {#<link type="text/css" rel="stylesheet" href="{{ get_asset_url('../../assets/css/vendors.css') }}" />
-     <link type="text/css" rel="stylesheet" href="{{ get_asset_url('../../assets/css/app.css') }}" /> #}
     {% block template_stylesheets %}
       {# if templates need any specific styles then write here ... #}
     {% endblock template_stylesheets %}

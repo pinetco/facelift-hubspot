@@ -98,7 +98,7 @@
       }
     }
     .legal-consent-container{
-      @apply mt-2 text-primary;
+      @apply mt-2 text-purple-500;
       >div{
         @apply mb-4;
       }
@@ -154,7 +154,7 @@
      filter: grayscale(100);
      &:focus{
        filter: grayscale(0);
-       @apply border-primary text-primary;
+       @apply border-gray-300 text-purple-500;
      }
    }
   

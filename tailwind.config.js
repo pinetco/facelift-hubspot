@@ -7,18 +7,47 @@ module.exports = {
   theme: {
     extend: {},
       colors:{
-        primary: '#034A7F',
-        secondary: '#0086C7',
-        gray: {
-          DEFAULT : '#DEE1E8',
-          light : '#F6F7F9',
-          dark : '#6C7893',
-          cool : '#3c3c3c',
-          medium : '#CACAC9',
+        "yellow" : {
+          "100" : "#FFEB96",
+          "200" : "#FFD200"
         },
-        white: '#FFFFFF',
-        black: '#000000',
-        transparent: 'transparent'
+        "orange" : {
+          "100" : "#FFD9A3",
+          "200" : "#FE9600",
+          "300" : "#FF6600",
+          "400" : "#920010"
+        },
+        "purple" : {
+          "100" : "#FBA9FF",
+          "200" : "#E000EE",
+          "300" : "#9600A0",
+          "400" : "#7C0084",
+          "500" : "#5A0A5A"
+        },
+        "green" : {
+          "100" : "#CCEAC6",
+          "200" : "#5FB193"
+        },
+        "blue" : {
+          "100" : "#E1FAFF",
+          "200" : "#C4F5FF",
+          "300" : "#38A5F8",
+          "400" : "#001EBE",
+          "500" : "#000F55",
+          "600" : "#040A29"
+        },
+        "gray" : {
+          "100" : "#E6E6EB",
+          "200" : "#D8D9E2",
+          "300" : "#A3A6B4",
+          "400" : "#7D7D7D",
+          "500" : "#535353",
+          "600" : "#646A89",
+          "700" : "#3D446C"
+        },
+        "white" : "#FFFFFF",
+        "transparent" : "transparent",
+        "black" : "#000000"
       }
     },
   variants: {

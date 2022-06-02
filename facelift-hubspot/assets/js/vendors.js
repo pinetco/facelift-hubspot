@@ -14039,9 +14039,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/public/assets/js/vendors": 0,
-/******/ 			"public/assets/css/vendors": 0,
-/******/ 			"public/assets/css/app": 0
+/******/ 			"/facelift-hubspot/assets/js/vendors": 0,
+/******/ 			"facelift-hubspot/assets/css/vendors": 0,
+/******/ 			"facelift-hubspot/assets/css/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -14091,9 +14091,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["public/assets/css/vendors","public/assets/css/app"], () => (__webpack_require__("./src/js/vendors.js")))
-/******/ 	__webpack_require__.O(undefined, ["public/assets/css/vendors","public/assets/css/app"], () => (__webpack_require__("./src/scss/vendors.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/assets/css/vendors","public/assets/css/app"], () => (__webpack_require__("./src/scss/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["facelift-hubspot/assets/css/vendors","facelift-hubspot/assets/css/app"], () => (__webpack_require__("./src/js/vendors.js")))
+/******/ 	__webpack_require__.O(undefined, ["facelift-hubspot/assets/css/vendors","facelift-hubspot/assets/css/app"], () => (__webpack_require__("./src/scss/vendors.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["facelift-hubspot/assets/css/vendors","facelift-hubspot/assets/css/app"], () => (__webpack_require__("./src/scss/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

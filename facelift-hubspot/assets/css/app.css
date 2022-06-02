@@ -121,7 +121,7 @@
 .hs-form .legal-consent-container {
   margin-top: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(3, 74, 127, var(--tw-text-opacity));
+  color: rgba(90, 10, 90, var(--tw-text-opacity));
 }
 
 .hs-form .legal-consent-container > div {
@@ -198,9 +198,9 @@ select {
 
 select:focus {
   filter: grayscale(0);
-  border-color: #034A7F;
+  border-color: #A3A6B4;
   --tw-text-opacity: 1;
-  color: rgba(3, 74, 127, var(--tw-text-opacity));
+  color: rgba(90, 10, 90, var(--tw-text-opacity));
 }
 
 textarea {

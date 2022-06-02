@@ -1,0 +1,61 @@
+h1,h2, h3, h4, h5, h6{
+  @apply mb-5 font-bold;
+}
+h1{
+  font-size: 28px;
+  line-height: 34;
+  @screen md{
+    font-size: 56px;
+    line-height: 66px;
+  }
+}
+h2{
+  line-height: 26px;
+  font-size: 30px;
+  @screen md{
+    font-size: 44px;
+    line-height: 55px;
+  }
+}
+h3{
+  font-size: 16px;
+  line-height: 24px;
+  @screen md{
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+h4{
+  line-height: 20px;
+  font-size: 14px;
+  @screen md{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+p {
+  line-height: 24px;
+}
+
+// Grandient text variant
+.purple-gradient {
+  background: -webkit-linear-gradient(left, #5B095B, #C02EB0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.orange-gradient {
+  background: -webkit-linear-gradient(left, #EA5E00 0%, #FF6600 41%, #FF944D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.purple-orange-gradient{
+  background: -webkit-linear-gradient(left, #00104E 0%, #C02EB0 36%, #FF6600 74%, #FF944D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typo-white {
+  h1,h2,h3,h4,h5,h6{
+    @apply text-white;
+  }
+}
