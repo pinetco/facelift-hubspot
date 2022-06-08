@@ -1,0 +1,6 @@
+.link-btn span:last-child{
+  transition: transform 0.3s ease-in-out;
+}
+.link-btn:hover span:last-child{
+  transform: translateX(5px);
+}

@@ -120,8 +120,7 @@
 
 .hs-form .legal-consent-container {
   margin-top: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgba(90, 10, 90, var(--tw-text-opacity));
+  color: #5A0A5A;
 }
 
 .hs-form .legal-consent-container > div {
@@ -199,10 +198,21 @@ select {
 select:focus {
   filter: grayscale(0);
   border-color: #A3A6B4;
-  --tw-text-opacity: 1;
-  color: rgba(90, 10, 90, var(--tw-text-opacity));
+  color: #5A0A5A;
 }
 
 textarea {
   display: block;
+}
+
+.link-btn span:last-child {
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-btn:hover span:last-child {
+  transform: translateX(5px);
+}
+
+.accordion-question-wrapper.is-active .accordion-question svg {
+  transform: rotate(90deg);
 }

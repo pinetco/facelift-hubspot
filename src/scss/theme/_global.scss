@@ -2,17 +2,27 @@ body{
     font-weight: normal;
     font-family: 'Hind', sans-serif;
 }
-.container{
-    max-width: 1160px;
-    @apply mx-auto px-4 w-full;
-}
-
-.section-gap{
-    @apply py-14;
-    @screen lg{
-        @apply py-20
-    }
-}
 img{
     -webkit-user-drag: none;
+}
+.embeded-responsive{
+  position:relative;
+  overflow:hidden;
+}
+
+.embeded-responsive:before{
+  content:"";
+  display:block;
+}
+
+.embeded-responsive-16by9:before{
+  padding-top:56.25%;
+}
+
+.embeded-responsive-4by3:before{
+  padding-top:75%;
+}
+
+.embeded-responsive-1by1:before{
+  padding-top:100%;
 }

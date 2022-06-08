@@ -936,86 +936,30 @@ body {
   font-family: "Hind", sans-serif;
 }
 
-.container {
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.section-gap {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-@media (min-width: 1024px) {
-  .section-gap {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
 img {
   -webkit-user-drag: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1.25rem;
-  font-weight: 700;
+.embeded-responsive {
+  position: relative;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 28px;
-  line-height: 34;
+.embeded-responsive:before {
+  content: "";
+  display: block;
 }
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: 56px;
-    line-height: 66px;
-  }
+.embeded-responsive-16by9:before {
+  padding-top: 56.25%;
 }
 
-h2 {
-  line-height: 26px;
-  font-size: 30px;
+.embeded-responsive-4by3:before {
+  padding-top: 75%;
 }
 
-@media (min-width: 768px) {
-  h2 {
-    font-size: 44px;
-    line-height: 55px;
-  }
-}
-
-h3 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-@media (min-width: 768px) {
-  h3 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
-h4 {
-  line-height: 20px;
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  h4 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-p {
-  line-height: 24px;
+.embeded-responsive-1by1:before {
+  padding-top: 100%;
 }
 
 .purple-gradient {
@@ -1036,7 +980,7 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.typo-white h1, .typo-white h2, .typo-white h3, .typo-white h4, .typo-white h5, .typo-white h6 {
+.typo-white h1, .typo-white h2, .typo-white h3, .typo-white h4, .typo-white h5, .typo-white h6, .typo-white p, .typo-white a {
   color: #FFFFFF;
 }
 

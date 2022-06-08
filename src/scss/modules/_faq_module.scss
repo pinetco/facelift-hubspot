@@ -1,0 +1,9 @@
+.accordion-question-wrapper{
+  &.is-active{
+    .accordion-question{
+      svg{
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
