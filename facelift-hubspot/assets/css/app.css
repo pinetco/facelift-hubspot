@@ -160,15 +160,6 @@
   margin-bottom: 0.25rem;
 }
 
-input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=reset]):not([type=button]), select {
-  height: 50px;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=reset]):not([type=button]).invalid, select.invalid {
   border-color: red;
 }

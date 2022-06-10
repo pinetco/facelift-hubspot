@@ -16079,20 +16079,75 @@ img {
   flex-shrink: 0;
 }
 
-ul.slick-dots {
-  bottom: 12px;
+.three-col-slider:not(.slick-initialized) {
+  display: flex;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  ul.slick-dots {
-    bottom: 20px;
+.three-col-slider:not(.slick-initialized) > div {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .three-col-slider:not(.slick-initialized) > div {
+    width: 50%;
   }
 }
 
+@media (min-width: 1024px) {
+  .three-col-slider:not(.slick-initialized) > div {
+    width: 33.333333%;
+  }
+}
+
+.four-col-slider:not(.slick-initialized) {
+  display: flex;
+  overflow: hidden;
+}
+
+.four-col-slider:not(.slick-initialized) > div {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .four-col-slider:not(.slick-initialized) > div {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .four-col-slider:not(.slick-initialized) > div {
+    width: 25%;
+  }
+}
+
+.equal-height-slider .slick-track {
+  display: flex;
+}
+
+.equal-height-slider .slick-track .slick-slide {
+  height: auto;
+}
+
+.equal-height-slider .slick-track .slick-slide > div {
+  height: 100%;
+}
+
+.equal-height-slider .slick-track .slick-slide > div > div {
+  height: 100%;
+}
+
+ul.slick-dots {
+  bottom: -30px;
+}
+
 ul.slick-dots li {
-  height: 0.5rem;
-  width: 1.75rem;
-  background-color: #FFFFFF;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 9999px;
+  background-color: #646A89;
   opacity: 0.3;
 }
 
@@ -16106,6 +16161,46 @@ ul.slick-dots li.slick-active {
 
 .slick-dotted.slick-slider {
   margin-bottom: 0px !important;
+}
+
+.slick-arrow {
+  z-index: 10;
+  opacity: 1;
+  transition-duration: 300ms;
+  top: -50px;
+}
+
+.slick-arrow:before {
+  content: "";
+  background-size: 36px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-arrow.slick-prev {
+  transform: translateX(-90px);
+  left: 100%;
+}
+
+.slick-arrow.slick-prev:before {
+  background-image: url("https://get.facelift-bbt.com/hubfs/Developer%20Assets/Group%203.svg");
+}
+
+.slick-arrow.slick-next {
+  transform: translateX(-20px);
+  right: 0;
+}
+
+.slick-arrow.slick-next:before {
+  background-image: url("https://get.facelift-bbt.com/hubfs/Developer%20Assets/Group%202.svg");
 }
 
 @media (min-width: 640px){

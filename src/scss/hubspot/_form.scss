@@ -132,8 +132,6 @@
   }
   
   input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=reset]):not([type=button]), select{
-    height:50px;
-    @apply py-2 px-4 w-full;
     &.invalid{
       border-color:red;
     }
