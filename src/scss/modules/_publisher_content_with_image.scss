@@ -1,0 +1,19 @@
+.foreground-img{
+  position: absolute;
+  top: 127px;
+  right: 171px;
+}
+@media(min-width:640px){
+  .foreground-img{
+    position: absolute;
+    top: 73px;
+    right: 157px;
+  }
+}
+@media(min-width:2000px){
+  .foreground-img{
+    position: absolute;
+    top: 38%;
+    right: 254px;
+  }
+}

@@ -1,0 +1,37 @@
+.success-stories-media{
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+.cs-tab-wrapper{
+  @apply hidden;
+  &.active{
+    @apply block
+  }
+}
+.success-stories-label{
+  @apply relative pl-3.5;
+}
+.success-stories-label:before{
+  content: "";
+  @apply absolute left-0 top-1.5 w-4 h-4 bg-no-repeat;
+  background-image: url('https://get.facelift-bbt.com/hubfs/Developer%20Assets/arrow-right.svg');
+  background-size: 9px;
+}
+.logo-img{
+  @apply w-full mx-auto;
+  max-width: 90px;
+  @screen md{
+      @apply w-full mx-auto;
+      max-width: 120px;
+  }
+}
+.logo-upper-border{
+  @apply border-t-4;
+  border-color: rgba(61,68,108,20%);
+}
+.company-logo-tab.active .logo-upper-border{
+  border-color: #E000EE;
+  @apply cursor-auto pointer-events-none;
+}
+.company-logo-tab .logo-upper-border{
+  cursor:pointer;
+}

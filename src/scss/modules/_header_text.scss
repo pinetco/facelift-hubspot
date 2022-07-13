@@ -1,0 +1,8 @@
+.header-richtext > *{
+  line-height: 28px;
+}
+@media(min-width: 768px){
+  .header-richtext > *{
+    line-height: 36px;
+  }
+}

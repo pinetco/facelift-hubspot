@@ -1,0 +1,20 @@
+.text-h1-shadow{
+  text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+}
+.disc-richtext ul li{
+  position: relative;
+  padding-left: 15px;
+}
+.disc-richtext ul li:before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  background: #050A28;
+  border-radius: 100%;
+}
+.disc-richtext ul li:not(:last-child){
+  padding-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+.feature-stories-container{
+  max-width: 1080px;
+  @apply w-full mx-auto;
+}
+.black-overlay{
+  @apply absolute bottom-0 left-0 w-full h-full;
+  z-index: 1;
+  max-height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100%);
+}
+.one-col-slider .slick-list{
+  @apply overflow-visible;
+}

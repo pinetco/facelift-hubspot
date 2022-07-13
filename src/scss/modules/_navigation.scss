@@ -1,0 +1,111 @@
+.header{
+  .white-logo, .color-logo{
+    .hs-image-widget{
+      max-width:120px;
+      width: 100% !important;
+      @screen lg{
+        max-width: 170px;
+      }
+    }
+  }
+  .nav-class{
+    @apply hidden;
+    @screen lg{
+      @apply flex;
+    }
+  }
+  .menu-btn{
+    @apply block;
+    @screen lg{
+      @apply hidden;
+    }
+  }
+  .link-btn{
+    @apply bg-white;
+    @screen lg{
+      background: transparent!important;
+    }
+  }
+  .hs-menu-wrapper{
+    @apply text-base;
+    &.hs-menu-flow-horizontal{
+      >ul{
+        @apply mb-0;
+        >li{
+          a{
+            max-width: 100%;
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    >ul{
+      @apply block;
+      @screen lg{
+        @apply flex;
+      }
+      >li{
+        @apply py-2.5 px-0;
+        &:hover .hs-menu-children-wrapper{
+          @apply visible opacity-100;
+          transition-delay: 0s;
+        }
+        @screen lg{
+          @apply py-0 px-4 relative;
+        }
+        >a{
+          @apply transform transition-all duration-200;
+          &:hover{
+            @apply text-black;
+          }
+        }
+        >ul{
+          @apply block opacity-100 visible static z-20 bg-white shadow-none;
+          @screen lg{
+            box-shadow: 0px 2px 6px #dbdbdb;
+            min-width: 200px;
+            transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+            @apply absolute invisible opacity-0 z-20 bg-white;
+          }
+        }
+      }
+    }
+    .hs-item-has-children{
+      >a{
+        &:after{
+          background-image: none;
+          @screen lg{
+            content: "";
+            background-image: url(https://get.facelift-bbt.com/hubfs/Developer%20Assets/arrow-down.png);
+            filter: grayscale(1);
+            background-size: 11px;
+            top: 13px;
+            right: -4px;
+            transition: grayscale 0.3s ease-in-out;
+            @apply absolute rounded-sm w-5 h-5 bg-no-repeat bg-center;
+          }
+        }
+      }
+      .hs-menu-children-wrapper{
+        .hs-menu-item:not(:last-child){
+          border-bottom: 1px solid #E6E6EB;
+        }
+        .hs-menu-item{
+          a{
+            @apply py-2.5 pl-8 pr-5 relative block transition-all duration-500;
+            &:hover{
+              transform:translateX(8px);
+              @apply text-black;
+            }
+            @screen lg{
+              padding: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.hs-item-has-children > a:hover:after{
+  filter: grayscale(0);
+}

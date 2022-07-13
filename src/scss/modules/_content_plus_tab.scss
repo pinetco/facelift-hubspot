@@ -1,0 +1,30 @@
+.tab-answer-wrapper .tab-img{
+  display: none;
+}
+.tab-answer-wrapper .tab-img.active{
+  display: block;
+}
+.tab-orange.tab-link.active{
+  background: #FF6600;
+  color: white;
+}
+.tab-orange.tab-link{
+  background: #FFD9A3;
+  color: #FF6600;
+}
+.tab-purple.tab-link.active{
+  background: #E000EE;
+  color: white;
+}
+.tab-purple.tab-link{
+  background: #FBA9FF;
+  color: #E000EE;
+}
+.tab-blue.tab-link {
+  background: #fff;
+  color: #38A5F8;
+}
+.tab-blue.tab-link.active {
+  background: #38A5F8;
+  color: #ffffff;
+}

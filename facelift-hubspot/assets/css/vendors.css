@@ -962,22 +962,23 @@ img {
   padding-top: 100%;
 }
 
-.purple-gradient {
-  background: -webkit-linear-gradient(left, #5B095B, #C02EB0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.max-w-580 {
+  max-width: 580px;
+  width: 100%;
 }
 
-.orange-gradient {
-  background: -webkit-linear-gradient(left, #EA5E00 0%, #FF6600 41%, #FF944D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.max-w-320 {
+  max-width: 320px;
+  width: 100%;
 }
 
-.purple-orange-gradient {
-  background: -webkit-linear-gradient(left, #00104E 0%, #C02EB0 36%, #FF6600 74%, #FF944D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.video-shadow {
+  box-shadow: 0px 5px 30px RGBA(100, 106, 137, 0.4);
+}
+
+.max-w-860 {
+  max-width: 860px;
+  width: 100%;
 }
 
 .typo-white h1, .typo-white h2, .typo-white h3, .typo-white h4, .typo-white h5, .typo-white h6, .typo-white p, .typo-white a {
@@ -12272,7 +12273,7 @@ img {
 }
 
 .border-black{
-  border-color: #000000;
+  border-color: #050A28;
 }
 
 .group:hover .group-hover\:border-yellow-100{
@@ -12388,7 +12389,7 @@ img {
 }
 
 .group:hover .group-hover\:border-black{
-  border-color: #000000;
+  border-color: #050A28;
 }
 
 .focus-within\:border-yellow-100:focus-within{
@@ -12504,7 +12505,7 @@ img {
 }
 
 .focus-within\:border-black:focus-within{
-  border-color: #000000;
+  border-color: #050A28;
 }
 
 .hover\:border-yellow-100:hover{
@@ -12620,7 +12621,7 @@ img {
 }
 
 .hover\:border-black:hover{
-  border-color: #000000;
+  border-color: #050A28;
 }
 
 .focus\:border-yellow-100:focus{
@@ -12736,7 +12737,7 @@ img {
 }
 
 .focus\:border-black:focus{
-  border-color: #000000;
+  border-color: #050A28;
 }
 
 .bg-yellow-100{
@@ -12852,7 +12853,7 @@ img {
 }
 
 .bg-black{
-  background-color: #000000;
+  background-color: #050A28;
 }
 
 .group:hover .group-hover\:bg-yellow-100{
@@ -12968,7 +12969,7 @@ img {
 }
 
 .group:hover .group-hover\:bg-black{
-  background-color: #000000;
+  background-color: #050A28;
 }
 
 .focus-within\:bg-yellow-100:focus-within{
@@ -13084,7 +13085,7 @@ img {
 }
 
 .focus-within\:bg-black:focus-within{
-  background-color: #000000;
+  background-color: #050A28;
 }
 
 .hover\:bg-yellow-100:hover{
@@ -13200,7 +13201,7 @@ img {
 }
 
 .hover\:bg-black:hover{
-  background-color: #000000;
+  background-color: #050A28;
 }
 
 .focus\:bg-yellow-100:focus{
@@ -13316,7 +13317,7 @@ img {
 }
 
 .focus\:bg-black:focus{
-  background-color: #000000;
+  background-color: #050A28;
 }
 
 .bg-auto{
@@ -14833,7 +14834,7 @@ img {
 }
 
 .text-black{
-  color: #000000;
+  color: #050A28;
 }
 
 .group:hover .group-hover\:text-yellow-100{
@@ -14949,7 +14950,7 @@ img {
 }
 
 .group:hover .group-hover\:text-black{
-  color: #000000;
+  color: #050A28;
 }
 
 .focus-within\:text-yellow-100:focus-within{
@@ -15065,7 +15066,7 @@ img {
 }
 
 .focus-within\:text-black:focus-within{
-  color: #000000;
+  color: #050A28;
 }
 
 .hover\:text-yellow-100:hover{
@@ -15181,7 +15182,7 @@ img {
 }
 
 .hover\:text-black:hover{
-  color: #000000;
+  color: #050A28;
 }
 
 .focus\:text-yellow-100:focus{
@@ -15297,7 +15298,7 @@ img {
 }
 
 .focus\:text-black:focus{
-  color: #000000;
+  color: #050A28;
 }
 
 .underline{
@@ -16123,6 +16124,28 @@ img {
   }
 }
 
+.icon-text-slider:not(.slick-initialized) {
+  display: flex;
+  overflow: hidden;
+}
+
+.icon-text-slider:not(.slick-initialized) > div {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .icon-text-slider:not(.slick-initialized) > div {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon-text-slider:not(.slick-initialized) > div {
+    width: 25%;
+  }
+}
+
 .equal-height-slider .slick-track {
   display: flex;
 }
@@ -16163,11 +16186,45 @@ ul.slick-dots li.slick-active {
   margin-bottom: 0px !important;
 }
 
+.one-col-slider .slick-arrow:before {
+  background-color: transparent;
+}
+
+.one-col-slider .slick-arrow.slick-prev:before {
+  background-image: url("https://get.facelift-bbt.com/hubfs/Developer%20Assets/btn-circle.svg");
+}
+
+.one-col-slider .slick-arrow.slick-next:before {
+  background-image: url("https://get.facelift-bbt.com/hubfs/Developer%20Assets/btn-circle%20copy.svg");
+}
+
+.one-col-slider ul.slick-dots li {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.one-col-slider ul.slick-dots li button {
+  display: none;
+}
+
+.one-col-slider ul.slick-dots li.slick-active {
+  opacity: 1;
+}
+
 .slick-arrow {
   z-index: 10;
   opacity: 1;
   transition-duration: 300ms;
-  top: -50px;
+  top: -45px;
+}
+
+@media (min-width: 768px) {
+  .slick-arrow {
+    top: -50px;
+  }
 }
 
 .slick-arrow:before {
@@ -27526,7 +27583,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .group:hover .sm\:group-hover\:border-yellow-100{
@@ -27642,7 +27699,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .sm\:group-hover\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .sm\:focus-within\:border-yellow-100:focus-within{
@@ -27758,7 +27815,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:focus-within\:border-black:focus-within{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .sm\:hover\:border-yellow-100:hover{
@@ -27874,7 +27931,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:hover\:border-black:hover{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .sm\:focus\:border-yellow-100:focus{
@@ -27990,7 +28047,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:focus\:border-black:focus{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .sm\:bg-yellow-100{
@@ -28106,7 +28163,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .group:hover .sm\:group-hover\:bg-yellow-100{
@@ -28222,7 +28279,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .sm\:group-hover\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .sm\:focus-within\:bg-yellow-100:focus-within{
@@ -28338,7 +28395,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:focus-within\:bg-black:focus-within{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .sm\:hover\:bg-yellow-100:hover{
@@ -28454,7 +28511,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:hover\:bg-black:hover{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .sm\:focus\:bg-yellow-100:focus{
@@ -28570,7 +28627,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:focus\:bg-black:focus{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .sm\:bg-auto{
@@ -30087,7 +30144,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .group:hover .sm\:group-hover\:text-yellow-100{
@@ -30203,7 +30260,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .sm\:group-hover\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .sm\:focus-within\:text-yellow-100:focus-within{
@@ -30319,7 +30376,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:focus-within\:text-black:focus-within{
-    color: #000000;
+    color: #050A28;
   }
 
   .sm\:hover\:text-yellow-100:hover{
@@ -30435,7 +30492,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:hover\:text-black:hover{
-    color: #000000;
+    color: #050A28;
   }
 
   .sm\:focus\:text-yellow-100:focus{
@@ -30551,7 +30608,7 @@ ul.slick-dots li.slick-active {
   }
 
   .sm\:focus\:text-black:focus{
-    color: #000000;
+    color: #050A28;
   }
 
   .sm\:underline{
@@ -42643,7 +42700,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .group:hover .md\:group-hover\:border-yellow-100{
@@ -42759,7 +42816,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .md\:group-hover\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .md\:focus-within\:border-yellow-100:focus-within{
@@ -42875,7 +42932,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:focus-within\:border-black:focus-within{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .md\:hover\:border-yellow-100:hover{
@@ -42991,7 +43048,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:hover\:border-black:hover{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .md\:focus\:border-yellow-100:focus{
@@ -43107,7 +43164,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:focus\:border-black:focus{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .md\:bg-yellow-100{
@@ -43223,7 +43280,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .group:hover .md\:group-hover\:bg-yellow-100{
@@ -43339,7 +43396,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .md\:group-hover\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .md\:focus-within\:bg-yellow-100:focus-within{
@@ -43455,7 +43512,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:focus-within\:bg-black:focus-within{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .md\:hover\:bg-yellow-100:hover{
@@ -43571,7 +43628,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:hover\:bg-black:hover{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .md\:focus\:bg-yellow-100:focus{
@@ -43687,7 +43744,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:focus\:bg-black:focus{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .md\:bg-auto{
@@ -45204,7 +45261,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .group:hover .md\:group-hover\:text-yellow-100{
@@ -45320,7 +45377,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .md\:group-hover\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .md\:focus-within\:text-yellow-100:focus-within{
@@ -45436,7 +45493,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:focus-within\:text-black:focus-within{
-    color: #000000;
+    color: #050A28;
   }
 
   .md\:hover\:text-yellow-100:hover{
@@ -45552,7 +45609,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:hover\:text-black:hover{
-    color: #000000;
+    color: #050A28;
   }
 
   .md\:focus\:text-yellow-100:focus{
@@ -45668,7 +45725,7 @@ ul.slick-dots li.slick-active {
   }
 
   .md\:focus\:text-black:focus{
-    color: #000000;
+    color: #050A28;
   }
 
   .md\:underline{
@@ -57760,7 +57817,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .group:hover .lg\:group-hover\:border-yellow-100{
@@ -57876,7 +57933,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .lg\:group-hover\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .lg\:focus-within\:border-yellow-100:focus-within{
@@ -57992,7 +58049,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:focus-within\:border-black:focus-within{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .lg\:hover\:border-yellow-100:hover{
@@ -58108,7 +58165,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:hover\:border-black:hover{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .lg\:focus\:border-yellow-100:focus{
@@ -58224,7 +58281,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:focus\:border-black:focus{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .lg\:bg-yellow-100{
@@ -58340,7 +58397,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .group:hover .lg\:group-hover\:bg-yellow-100{
@@ -58456,7 +58513,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .lg\:group-hover\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .lg\:focus-within\:bg-yellow-100:focus-within{
@@ -58572,7 +58629,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:focus-within\:bg-black:focus-within{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .lg\:hover\:bg-yellow-100:hover{
@@ -58688,7 +58745,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:hover\:bg-black:hover{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .lg\:focus\:bg-yellow-100:focus{
@@ -58804,7 +58861,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:focus\:bg-black:focus{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .lg\:bg-auto{
@@ -60321,7 +60378,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .group:hover .lg\:group-hover\:text-yellow-100{
@@ -60437,7 +60494,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .lg\:group-hover\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .lg\:focus-within\:text-yellow-100:focus-within{
@@ -60553,7 +60610,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:focus-within\:text-black:focus-within{
-    color: #000000;
+    color: #050A28;
   }
 
   .lg\:hover\:text-yellow-100:hover{
@@ -60669,7 +60726,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:hover\:text-black:hover{
-    color: #000000;
+    color: #050A28;
   }
 
   .lg\:focus\:text-yellow-100:focus{
@@ -60785,7 +60842,7 @@ ul.slick-dots li.slick-active {
   }
 
   .lg\:focus\:text-black:focus{
-    color: #000000;
+    color: #050A28;
   }
 
   .lg\:underline{
@@ -72877,7 +72934,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .group:hover .xl\:group-hover\:border-yellow-100{
@@ -72993,7 +73050,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .xl\:group-hover\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .xl\:focus-within\:border-yellow-100:focus-within{
@@ -73109,7 +73166,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:focus-within\:border-black:focus-within{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .xl\:hover\:border-yellow-100:hover{
@@ -73225,7 +73282,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:hover\:border-black:hover{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .xl\:focus\:border-yellow-100:focus{
@@ -73341,7 +73398,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:focus\:border-black:focus{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .xl\:bg-yellow-100{
@@ -73457,7 +73514,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .group:hover .xl\:group-hover\:bg-yellow-100{
@@ -73573,7 +73630,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .xl\:group-hover\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .xl\:focus-within\:bg-yellow-100:focus-within{
@@ -73689,7 +73746,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:focus-within\:bg-black:focus-within{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .xl\:hover\:bg-yellow-100:hover{
@@ -73805,7 +73862,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:hover\:bg-black:hover{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .xl\:focus\:bg-yellow-100:focus{
@@ -73921,7 +73978,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:focus\:bg-black:focus{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .xl\:bg-auto{
@@ -75438,7 +75495,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .group:hover .xl\:group-hover\:text-yellow-100{
@@ -75554,7 +75611,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .xl\:group-hover\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .xl\:focus-within\:text-yellow-100:focus-within{
@@ -75670,7 +75727,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:focus-within\:text-black:focus-within{
-    color: #000000;
+    color: #050A28;
   }
 
   .xl\:hover\:text-yellow-100:hover{
@@ -75786,7 +75843,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:hover\:text-black:hover{
-    color: #000000;
+    color: #050A28;
   }
 
   .xl\:focus\:text-yellow-100:focus{
@@ -75902,7 +75959,7 @@ ul.slick-dots li.slick-active {
   }
 
   .xl\:focus\:text-black:focus{
-    color: #000000;
+    color: #050A28;
   }
 
   .xl\:underline{
@@ -87994,7 +88051,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .group:hover .\32xl\:group-hover\:border-yellow-100{
@@ -88110,7 +88167,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .\32xl\:group-hover\:border-black{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .\32xl\:focus-within\:border-yellow-100:focus-within{
@@ -88226,7 +88283,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:focus-within\:border-black:focus-within{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .\32xl\:hover\:border-yellow-100:hover{
@@ -88342,7 +88399,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:hover\:border-black:hover{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .\32xl\:focus\:border-yellow-100:focus{
@@ -88458,7 +88515,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:focus\:border-black:focus{
-    border-color: #000000;
+    border-color: #050A28;
   }
 
   .\32xl\:bg-yellow-100{
@@ -88574,7 +88631,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .group:hover .\32xl\:group-hover\:bg-yellow-100{
@@ -88690,7 +88747,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .\32xl\:group-hover\:bg-black{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .\32xl\:focus-within\:bg-yellow-100:focus-within{
@@ -88806,7 +88863,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:focus-within\:bg-black:focus-within{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .\32xl\:hover\:bg-yellow-100:hover{
@@ -88922,7 +88979,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:hover\:bg-black:hover{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .\32xl\:focus\:bg-yellow-100:focus{
@@ -89038,7 +89095,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:focus\:bg-black:focus{
-    background-color: #000000;
+    background-color: #050A28;
   }
 
   .\32xl\:bg-auto{
@@ -90555,7 +90612,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .group:hover .\32xl\:group-hover\:text-yellow-100{
@@ -90671,7 +90728,7 @@ ul.slick-dots li.slick-active {
   }
 
   .group:hover .\32xl\:group-hover\:text-black{
-    color: #000000;
+    color: #050A28;
   }
 
   .\32xl\:focus-within\:text-yellow-100:focus-within{
@@ -90787,7 +90844,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:focus-within\:text-black:focus-within{
-    color: #000000;
+    color: #050A28;
   }
 
   .\32xl\:hover\:text-yellow-100:hover{
@@ -90903,7 +90960,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:hover\:text-black:hover{
-    color: #000000;
+    color: #050A28;
   }
 
   .\32xl\:focus\:text-yellow-100:focus{
@@ -91019,7 +91076,7 @@ ul.slick-dots li.slick-active {
   }
 
   .\32xl\:focus\:text-black:focus{
-    color: #000000;
+    color: #050A28;
   }
 
   .\32xl\:underline{

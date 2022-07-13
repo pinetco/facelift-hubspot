@@ -1,0 +1,49 @@
+.video-tab{
+  @apply cursor-pointer;
+}
+.video-tab-answer{
+  @apply hidden
+}
+.video-tab-answer.active{
+  @apply block
+}
+.media-shadow{
+  box-shadow: 0px 5px 30px RGBA(100, 106, 137, 0.4);
+}
+.theme-purple.active{
+  background: #E000EE;
+  color: white;
+  border-radius:12px;
+}
+.theme-orange.active{
+  background: #FF6600;
+  color: white;
+  border-radius:12px;
+}
+.theme-blue.active{
+  background: #38A5F8;
+  color: white;
+  border-radius:12px;
+}
+.video-tab:last-child:after{
+  display: none;
+}
+.video-tab:after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 2px;
+  margin: 0 auto;
+}
+ul .theme-purple.video-tab:after{
+  background: #FBA9FF;
+}
+ul .theme-orange.video-tab:after{
+  background: #FFD9A3;
+}
+ul .theme-blue.video-tab:after{
+  background: #E1FAFF;
+}

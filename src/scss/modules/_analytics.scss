@@ -1,0 +1,13 @@
+.analytics-container{
+  @apply w-full mx-auto;
+  max-width: 1160px;
+}
+.border-top-left-100{
+  border-top-left-radius: 100px;
+}
+.analytics-img-cover{
+  @apply bg-cover bg-top;
+  @screen xl{
+    background-size: 100% 100%;
+  }
+}

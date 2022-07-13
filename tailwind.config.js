@@ -47,7 +47,7 @@ module.exports = {
         },
         "white" : "#FFFFFF",
         "transparent" : "transparent",
-        "black" : "#000000"
+        "black" : "#050A28"
       }
     },
   variants: {

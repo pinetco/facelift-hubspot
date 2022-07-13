@@ -1,0 +1,15 @@
+.orange-link a{
+  color:#FF6600;
+}
+.purple-link a{
+  color:#9600A0;
+}
+.orange-link a, .purple-link a{
+  padding: 0px;
+}
+.orange-link span:last-child,.purple-link span:last-child {
+  transition: transform .3s ease-in-out;
+}
+.orange-link:hover span:last-child,.purple-link:hover span:last-child {
+  transform: translateX(5px);
+}

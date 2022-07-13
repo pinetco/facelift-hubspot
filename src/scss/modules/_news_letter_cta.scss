@@ -1,0 +1,31 @@
+.news-letter-form{
+  form{
+    @apply relative;
+      input[type=email], form input[type=file], form input[type=number], form input[type=password], form input[type=tel], form input[type=text], form select, form textarea{
+        border-radius: 18px !important;
+        padding-right: 120px !important;
+      }
+    input[type=submit],
+    .hs-button{
+      padding: 7px 20px;
+      border-radius: 0px 18px 18px 0px;
+    }
+    .actions{
+      @apply absolute right-0;
+      top: 23px;
+    }
+    .hs-form-field{
+      label{
+        margin-top: 0px !important;
+        margin-bottom: 4px !important;
+        @apply mb-2 inline-block;
+      }
+    }
+    .hs-error-msgs{
+      .hs-error-msg{
+        font-size: 14px;
+        color: #ff3333;
+      }
+    }
+  }
+}

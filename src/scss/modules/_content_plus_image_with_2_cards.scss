@@ -1,0 +1,57 @@
+.quotes-card-shadow{
+  box-shadow: 0 10px 30px rgb(100 106 137 / 30%);
+}
+.w-1000{
+  @apply w-full
+}
+.right-700{
+  right: 30px;
+}
+.left-300{
+  left: 30px;
+}
+.off-canvas-left{
+  right: 0;
+}
+.off-canvas-right{
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .w-1000{
+    width: 1000px;
+  }
+  .right-700{
+    right: 580px;
+  }
+  .off-canvas-left{
+    right: 60%;
+  }
+  .off-canvas-right{
+    left: 3%;
+  }
+}
+@media (min-width: 1281px) {
+  .right-700{
+    right: 460px;
+  }
+  .left-300{
+    left: 0px;
+  }
+  .off-canvas-left{
+    right: 45%;
+  }
+}
+@media (min-width: 1536px) {
+  .right-700{
+    right: 700px;
+  }
+  .left-300{
+    left: 300px;
+  }
+  .off-canvas-left{
+    right: 70%;
+  }
+  .off-canvas-right{
+    left: 25%;
+  }
+}

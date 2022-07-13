@@ -1,0 +1,14 @@
+input[type="text"]{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height:20px;
+    background-size: 13px;
+    background-image: url(https://get.facelift-bbt.com/hubfs/Developer%20Assets/user.svg);
+    background-repeat: no-repeat;
+  }
+}
