@@ -1,0 +1,35 @@
+.video-header-form .hs-form{
+  position: relative;
+}
+.video-header-form .hs-submit{
+  position: absolute;
+  top: -3px;
+  right: 0px;
+}
+.video-header-form [type="email"]{
+  width: 75%;
+  border-radius: 20px;
+}
+.video-header-form .hs-form-field label{
+  display: none;
+}
+.video-header-form .hs-form .hs-form-field{
+  margin-bottom: 0;
+}
+.video-header-form .hs-error-msgs li label{
+  color: red;
+}
+@media (max-width: 767px) {
+    .video-header-form .hs-submit{
+      position: static;
+      top: 0;
+      right: 0;
+    }
+    .video-header-form [type="email"]{
+      width: 100%;
+      border-radius: 20px;
+    }
+    .video-header-form .actions{
+      margin-top: 10px;
+    }
+}

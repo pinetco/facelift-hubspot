@@ -8,104 +8,140 @@
       }
     }
   }
-  .nav-class{
-    @apply hidden;
-    @screen lg{
-      @apply flex;
-    }
-  }
-  .menu-btn{
-    @apply block;
-    @screen lg{
-      @apply hidden;
-    }
-  }
-  .link-btn{
-    @apply bg-white;
-    @screen lg{
-      background: transparent!important;
-    }
-  }
-  .hs-menu-wrapper{
-    @apply text-base;
-    &.hs-menu-flow-horizontal{
-      >ul{
-        @apply mb-0;
-        >li{
-          a{
-            max-width: 100%;
-            width: 100% !important;
-          }
-        }
-      }
-    }
-    >ul{
-      @apply block;
-      @screen lg{
-        @apply flex;
-      }
-      >li{
-        @apply py-2.5 px-0;
-        &:hover .hs-menu-children-wrapper{
-          @apply visible opacity-100;
-          transition-delay: 0s;
-        }
-        @screen lg{
-          @apply py-0 px-4 relative;
-        }
-        >a{
-          @apply transform transition-all duration-200;
-          &:hover{
-            @apply text-black;
-          }
-        }
-        >ul{
-          @apply block opacity-100 visible static z-20 bg-white shadow-none;
-          @screen lg{
-            box-shadow: 0px 2px 6px #dbdbdb;
-            min-width: 200px;
-            transition: visibility 0s linear 0.33s, opacity 0.33s linear;
-            @apply absolute invisible opacity-0 z-20 bg-white;
-          }
-        }
-      }
-    }
-    .hs-item-has-children{
-      >a{
-        &:after{
-          background-image: none;
-          @screen lg{
-            content: "";
-            background-image: url(https://get.facelift-bbt.com/hubfs/Developer%20Assets/arrow-down.png);
-            filter: grayscale(1);
-            background-size: 11px;
-            top: 13px;
-            right: -4px;
-            transition: grayscale 0.3s ease-in-out;
-            @apply absolute rounded-sm w-5 h-5 bg-no-repeat bg-center;
-          }
-        }
-      }
-      .hs-menu-children-wrapper{
-        .hs-menu-item:not(:last-child){
-          border-bottom: 1px solid #E6E6EB;
-        }
-        .hs-menu-item{
-          a{
-            @apply py-2.5 pl-8 pr-5 relative block transition-all duration-500;
-            &:hover{
-              transform:translateX(8px);
-              @apply text-black;
-            }
-            @screen lg{
-              padding: 14px;
-            }
-          }
-        }
-      }
-    }
+  &.white-header{
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
+    box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
   }
 }
-.hs-item-has-children > a:hover:after{
-  filter: grayscale(0);
+.facelift-navigation-menu .hs-menu-wrapper > ul li{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.facelift-navigation-menu .hs-menu-wrapper ul li a{
+  padding: 12px 16px !important;
+  display: block;
+  color: #3D446C;
+  transition: all 0.3s ease-in-out;
+}
+.facelift-navigation-menu .hs-menu-wrapper ul li a:hover{
+  color: #FF6600;
+}
+.facelift-navigation-menu .hs-menu-wrapper ul li ul li a:hover{
+  background-color: rgb(230 230 235 / 50%);
+  color: #3D446C !important;
+}
+.facelift-navigation-menu .hs-menu-wrapper ul li ul li a:hover{
+  color: #FF6600;
+}
+.facelift-navigation-menu .hs-menu-wrapper > ul li ul{
+  display: none;
+  padding-left: 10px;
+}
+.facelift-navigation-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper{
+  position: static;
+}
+.submenu-toggle{
+  width: 20px !important;
+  height: 20px !important;
+  position: absolute;
+  right: 16px;
+  top:10px;
+}
+.facelift-navigation-menu .hs-menu-wrapper ul li:hover > ul {
+  display: none;
+}
+.facelift-navigation-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper{
+  visibility: visible;
+  opacity: 1;
+}
+.facelift-navigation-menu{
+  display:none;
+}
+@media(min-width: 1024px){
+  .facelift-navigation-menu .hs-menu-wrapper > ul{
+    display: flex;
+    align-items: center;
+  }
+  .facelift-navigation-menu .hs-menu-wrapper > ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin-left: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
+    box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
+    padding-left: 0px;
+  }
+  .facelift-navigation-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper{
+    position: absolute;
+  }
+  .facelift-navigation-menu .hs-menu-wrapper > ul li ul li:not(:last-child){
+    border-bottom: 1px solid #E6E6EB;
+  }
+  .facelift-navigation-menu .hs-menu-wrapper ul ul ul{
+    left: 100% !important;
+    top: 0 !important;
+  }
+  .facelift-navigation-menu .hs-menu-wrapper ul li:hover > ul{
+    display: block;
+  }
+  .submenu-toggle{
+    display: none;
+  }
+  .facelift-navigation-menu{
+    display:flex !important;
+  }
+  .facelift-navigation-menu ul li.hs-menu-depth-1.hs-item-has-children:after{
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:grayscale(1);
+    transition: all 0.3s ease-in-out;
+  }
+  .facelift-navigation-menu ul li.hs-menu-depth-1.hs-item-has-children:hover:after{
+    filter:grayscale(0);
+  }
+  .facelift-navigation-menu ul li.hs-menu-depth-1{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+.facelift-navigation-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper li a{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.facelift-navigation-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul{
+  margin-bottom: 0px !important;
+}
+.submenu-arrow{
+  position: relative;
+  display: block;
+}
+.submenu-toggle .submenu-arrow:before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(-90deg);
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s ease-in-out;
+}
+.submenu-toggle.is-open .submenu-arrow:before{
+  transform: rotate(0deg);
 }

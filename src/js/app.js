@@ -167,15 +167,7 @@ $('.video-tab').click( function() {
     $(this).addClass('active').siblings().removeClass('active');
     $('#video-'+tabID).addClass('active').siblings().removeClass('active');
 });
-
-/* Humberger */
-$(document).ready(function(){
-    $(".humberger-btn").click(function(){
-        $(".header-menu").slideDown("slow");
-    });
-});
 /* Pricing Card */
-
 function mobileOnlySlider() {
     $('.pricing-card').slick({
         dots: false,
@@ -201,12 +193,55 @@ $(window).resize(function (e) {
         }
     }
 });
-// $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     if (scroll >= 10) {
-//         $(".facelift-header").addClass("darkHeader");
-//     }
-//     if ( scroll <= 10 ){
-//         $(".facelift-header").removeClass("darkHeader");
-//     }
-// });
+$("[data-toggle='video']").click(function(){
+    var clone = $(this).find(".video-popup").clone();
+    $("#video-popup").find(".wistia-video-popup").html("");
+    $("#video-popup").find(".wistia-video-popup").html(clone);
+    $("#video-popup").fadeIn();
+});
+
+$("[data-close]").click(function(){
+    $(this).parents(".modal").fadeOut();
+});
+
+$(function() { // DOM ready
+               // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        // Close one dropdown when selecting another
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+        $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+        $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+        this.classList.toggle('active');
+    });
+}); // end DOM ready
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 1) {
+        $(".header").addClass("white-header");
+    }
+    else{
+        $(".header").removeClass("white-header");
+    }
+});
+$(".menu-toggle").click(function(){
+    $(".facelift-navigation-menu").slideToggle();
+});
+
+$(".hs-item-has-children").append("<span class='block submenu-toggle'><span class='block w-full h-full submenu-arrow'></span></span>")
+
+$(".submenu-toggle").click(function(){
+    $(this).toggleClass("is-open");
+    $(this).siblings("ul").slideToggle();
+});
