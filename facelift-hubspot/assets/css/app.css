@@ -199,6 +199,7 @@ textarea {
 .header .white-logo .hs-image-widget, .header .color-logo .hs-image-widget {
   max-width: 120px;
   width: 100% !important;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 1024px) {

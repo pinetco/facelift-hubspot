@@ -3,6 +3,7 @@
     .hs-image-widget{
       max-width:120px;
       width: 100% !important;
+      transition: all 0.3s ease-in-out;
       @screen lg{
         max-width: 170px;
       }
