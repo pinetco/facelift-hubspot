@@ -213,7 +213,12 @@ $(window).scroll(function() {
         $(".header").removeClass("white-header");
     }
 });
-
+$('.humberger-close').click( function(){
+    $('.facelift-responsive-menu').fadeOut();
+});
+$('.menu-toggle').click( function(){
+    $('.facelift-responsive-menu').fadeIn();
+});
 $(".hs-item-has-children").append("<span class='block submenu-toggle'><span class='block w-full h-full submenu-arrow'></span></span>")
 
 $(".submenu-toggle").click(function(){
