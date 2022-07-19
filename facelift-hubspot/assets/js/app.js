@@ -210,16 +210,16 @@ $(window).scroll(function () {
     $(".header").removeClass("white-header");
   }
 });
+$(".hs-item-has-children").append("<span class='block submenu-toggle'><span class='block w-full h-full submenu-arrow'></span></span>");
+$(".submenu-toggle").click(function () {
+  $(this).toggleClass("is-open");
+  $(this).siblings("ul").slideToggle();
+});
 $('.humberger-close').click(function () {
   $('.facelift-responsive-menu').fadeOut();
 });
 $('.menu-toggle').click(function () {
   $('.facelift-responsive-menu').fadeIn();
-});
-$(".hs-item-has-children").append("<span class='block submenu-toggle'><span class='block w-full h-full submenu-arrow'></span></span>");
-$(".submenu-toggle").click(function () {
-  $(this).toggleClass("is-open");
-  $(this).siblings("ul").slideToggle();
 });
 /******/ })()
 ;

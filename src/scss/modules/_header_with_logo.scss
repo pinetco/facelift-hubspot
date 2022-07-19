@@ -9,6 +9,12 @@
   z-index: -1;
 }
 .big-img-background{
-  background-size: 100% 100%;
+  background-size: 122% 94%;
   z-index: -1;
+}
+@media (min-width: 1281px) {
+  .big-img-background{
+    background-size: 100% 100%;
+    z-index: -1;
+  }
 }
