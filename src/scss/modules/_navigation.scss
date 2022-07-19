@@ -60,6 +60,17 @@
 .facelift-navigation-menu{
   display:none;
 }
+.color-logo-responsive a img.hs-image-widget{
+  max-width: 100px;
+  width: 100%;
+}
+.facelift-responsive-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul{
+  display: block;
+}
+.facelift-responsive-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li{
+  display: block;
+  width: 100%;
+}
 @media(min-width: 1024px){
   .facelift-navigation-menu .hs-menu-wrapper > ul{
     display: flex;
@@ -70,10 +81,12 @@
     top: 100%;
     left: 0;
     min-width: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
     margin-left: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
     -moz-box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
     box-shadow: 0px 5px 83px -29px rgba(0,0,0,0.64);
