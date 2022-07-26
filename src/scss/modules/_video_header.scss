@@ -7,10 +7,10 @@
   right: 0px;
 }
 .video-header-form [type="email"]{
-  width: 75%;
+  width: 70%;
   border-radius: 20px;
 }
-.video-header-form .hs-form-field label{
+.video-header-form .hs-form-field > label{
   display: none;
 }
 .video-header-form .hs-form .hs-form-field{
@@ -18,6 +18,14 @@
 }
 .video-header-form .hs-error-msgs li label{
   color: red;
+}
+.news-letter-form .submitted-message{
+  padding: 12px;
+  background: rgb(255 102 0 / 10%);
+  color: #ff6600;
+  max-width: 400px;
+  text-align: center;
+  font-family: new-hero, sans-serif;
 }
 @media (max-width: 767px) {
     .video-header-form .hs-submit{

@@ -27,7 +27,11 @@
 }
 .footer-partner-logo{
   @apply block w-full;
-  max-width: 130px;
+  max-width: 100px;
+}
+.app-store-widget{
+  @apply w-full block;
+  max-width: 135px;
 }
 .legal-content{
   .hs-menu-wrapper.hs-menu-flow-horizontal {
@@ -44,4 +48,16 @@
         }
     }
   }
+}
+.footer .legal-content .hs-menu-flow-horizontal > ul{
+  margin-bottom:0px!important;
+}
+.footer .legal-content ul .hs-menu-depth-1{
+  padding-left:36px;
+}
+.footer .footer-link ul li a{
+  color: inherit;
+}
+.footer .legal-content ul li a{
+  color: inherit;
 }

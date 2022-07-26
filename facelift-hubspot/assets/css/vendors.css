@@ -981,6 +981,10 @@ img {
   width: 100%;
 }
 
+* {
+  font-family: new-hero, sans-serif !important;
+}
+
 .typo-white h1, .typo-white h2, .typo-white h3, .typo-white h4, .typo-white h5, .typo-white h6, .typo-white p, .typo-white a {
   color: #FFFFFF;
 }
