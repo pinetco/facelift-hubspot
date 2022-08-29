@@ -342,13 +342,16 @@ textarea {
     height: 18px;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(1) brightness(5);
+    filter: grayscale(1);
     transition: all 0.3s ease-in-out;
   }
 
-  .facelift-navigation-menu ul li.hs-menu-depth-1.hs-item-has-children:hover:after,
-.white-header .facelift-navigation-menu ul li.hs-menu-depth-1.hs-item-has-children:after {
-    filter: grayscale(0);
+  .facelift-navigation-menu .hs-menu-wrapper > ul li a {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .facelift-navigation-menu .hs-menu-wrapper > ul li a:hover {
+    color: #ff6600;
   }
 
   .facelift-navigation-menu ul li.hs-menu-depth-1 {

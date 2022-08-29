@@ -170,12 +170,12 @@ $('.video-tab').click( function() {
 /* Pricing Card */
 function mobileOnlySlider() {
     $('.pricing-card').slick({
+        arrows: false,
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 800,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
+        slidesToScroll: 1
     });
 }
 if (window.innerWidth < 768) {

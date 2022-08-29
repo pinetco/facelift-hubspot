@@ -168,12 +168,12 @@ $('.video-tab').click(function () {
 
 function mobileOnlySlider() {
   $('.pricing-card').slick({
+    arrows: false,
     dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false
+    slidesToScroll: 1
   });
 }
 
